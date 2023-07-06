@@ -1,0 +1,231 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.about-fork {
+    background-image: url('../images/about-fork/about-fork-back.jpg');
+    background-size: cover;
+    padding: 46px 5px 14px 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $dp-tablet) {
+        padding: 85px 8px 88px 8px;
+    }
+
+    @media (min-width: $dp-desctop) {
+        padding: 108px 85px 112px 85px;
+        @include flexcenter;
+
+    }
+
+}
+
+.about-fork__title-wrapper {
+    text-align: center;
+    margin-bottom: 43px;
+
+    @media (min-width: $dp-tablet) {
+        margin-bottom: 82px;
+    }
+
+    @media (min-width: $dp-desctop) {
+        margin-bottom: 70px;
+    }
+
+    .about-fork__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: $secondary-color;
+
+        @media (min-width: $dp-tablet) {
+            font-size: 42px;
+            line-height: 44px;
+        }
+
+        @media (min-width: $dp-desctop) {
+            font-size: 48px;
+            line-height: 50px;
+        }
+    }
+}
+
+.about-fork__reviews-container {
+    @include flexcenter(center, center, column);
+    gap: 41px;
+    margin-bottom: 38px;
+
+    @media (min-width: $dp-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0;
+        margin-bottom: 59px;
+    }
+
+    @media (min-width: $dp-desctop) {
+        row-gap: 111px;
+        margin-bottom: 111px;
+    }
+
+    .about-fork__review-card {
+        text-align: center;
+        padding: 0 19px;
+
+        @media (min-width: $dp-tablet) {
+            flex: 0 1 47%;
+            padding: 0;
+            max-width: 315px;
+            @include flexcenter(flex-end, center, column);
+        }
+
+        @media (min-width: $dp-desctop) {
+            flex: 0 1 29%;
+        }
+        .about-fork__logo {
+            @include flexcenter;
+        }
+
+        .about-fork__text {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: $secondary-color;
+        }
+    }
+    
+}
+
+.about-fork__reviews-container {
+
+
+    .about-fork__review-card--smashing-magazine-height {
+    
+        @media (min-width: $dp-tablet) {
+            height: 145px;
+        }
+
+        @media (min-width: $dp-desctop) {
+            height: auto;
+        }
+    }
+    
+    .about-fork__logo--smashing-icon-margin {
+        margin-bottom: 28px;
+    }
+
+    .about-fork__review-card--codrops-height {
+      
+        @media (min-width: $dp-tablet) {
+            height: 145px;
+        }
+
+        @media (min-width: $dp-desctop) {
+            height: auto;
+        }
+    }
+
+    .about-fork__logo--codrops-icon-margin {
+        margin-bottom: 23px;
+    }
+    
+    .about-fork__review-card--w-height, .about-fork__review-card--pixel-buddha-height {
+
+        @media (min-width: $dp-tablet) {
+            height: 206px;
+        }
+
+        @media (min-width: $dp-desctop) {
+            height: auto;
+        }
+    }
+
+    .about-fork__logo--w-icon-margin {
+        margin-bottom: 16px;
+    }
+
+    .about-fork__logo--buddha-icon-margin {
+        margin-bottom: 28px;
+    }
+    
+    .about-fork__review-card--creative-block-height {
+          
+        @media (min-width: $dp-tablet) {
+            height: 186px;
+        }
+
+        @media (min-width: $dp-desctop) {
+            height: auto;
+        }
+    }
+
+    .about-fork__logo--creative-block-icon-margin {
+        margin-bottom: 28px;
+    }
+    
+    .about-fork__review-card--tnw-height {
+      
+        @media (min-width: $dp-tablet) {
+            height: 186px;
+        }
+
+        @media (min-width: $dp-desctop) {
+            height: auto;
+        }
+    }
+
+    .about-fork__logo--tnw-icon-margin {
+        margin-bottom: 28px;
+    }
+}
+
+.about-fork__additional-content-wrapper{ 
+    padding: 0 10px 23px;
+    position: relative;
+
+    @media (min-width: $dp-tablet) {
+        padding: 0 15px 16px;
+    }
+    
+    @media (min-width: $dp-desctop) {
+        @include flexcenter;
+        padding: 0 0 15px 0;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 245px;
+        height: 2px;
+        border-bottom: 2px solid #645766;
+
+        @media (min-width: $dp-tablet) {
+            max-width: 100%;
+            width: 555px;
+        }
+
+        @media (min-width: $dp-desctop) {
+            width: 780px;
+        }
+    }
+
+    .about-fork__additional-content {
+        font-family: 'Lato';
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #A291A5;
+
+        @media (min-width: $dp-desctop) {
+            max-width: 887px;
+        }
+    }
+}
