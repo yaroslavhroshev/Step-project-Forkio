@@ -1,4 +1,4 @@
-# Second-step-project ["FORKIO"](https://yaroslavhroshev.github.io/Second-step-project/)
+# Second-step-project ["FORKIO"](https://yaroslavhroshev.github.io/Step-project-Forkio/)
 
 **Composition of project participants**:
 
